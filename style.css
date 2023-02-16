@@ -1,0 +1,401 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Josefin Sans;' sans-serif;
+}
+.nav{
+	height: 110vh;
+	width: 100%;
+	background-image: linear-gradient(rgb(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(bg.png);	
+	background-size: cover;
+	background-position: center;
+
+}
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 40px;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+.logo{
+	color: white;
+	font-size: 40px;
+	font-family: Comic Sans MS;
+}
+span{
+	color: #ea1538;
+}
+nav ul li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 10px 22px;
+}
+nav ul li a{
+	color: white;
+	font-weight: bold;
+	font-family: SimSun-ExtB;
+	
+
+}
+nav ul li a:hover{
+	transition: 0.5s;
+	color: #ea1538;
+}
+a{
+	text-decoration: none;
+}
+.main{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+
+}
+.main h1{
+	color: white;
+	font-size: 80px;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	font-weight: 1000;
+	letter-spacing: 2px;
+	margin-bottom: 10px;
+}
+.main p{
+	margin-bottom: 25px;
+	color: white;
+	font-size: 18px;
+	line-height: 1.7;
+	font-weight: 500;
+	font-family: Yu Gothic UI;
+}
+button{
+	background: #ea1538;
+	padding: 12px 30px;
+	border: 2px solid transparent;
+	border-radius: 30px;
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	transition: .8s;
+
+}
+button:hover{
+	background: transparent;
+	border: 2px solid #ea1538;
+	color: white;
+	cursor: pointer;
+
+}
+.link{
+	position: absolute;
+	top: 90%;
+	left: 10%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.link h6{
+	color: white;
+	font-size: 20px;
+	margin-right: 50px;
+	font-family: Nirmala UI;
+}
+.link .social a{
+	display: inline-block;
+	color: white;
+	margin-right: 10px;
+	transition: 0.3s;
+
+
+}
+.link .social a:hover{
+	transform: scale(1.4);
+}
+
+
+/*second section start*/
+.container{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+
+
+}
+section{
+	/*background: rgb(27, 27, 27);*/
+	background-color: black;
+	height: 110vh;
+}
+.card{
+	background: linen;
+	width: 400px;
+	height: 700px;
+	margin: 10px;
+	border-radius: 15px;
+}
+.card-img{
+	
+	height: 400px;
+	margin-bottom: 15px;
+	background-size: cover;
+}
+.img-1{
+	background-image: url(pf2.jpg);
+}
+.img-2{
+	background-image: url(pf3.jpg);
+}
+.img-3{
+	background-image: url(pf4.jpg);
+}
+.projs{
+	background-color: black;
+
+}
+.projs h1{
+	color: #ea1538;
+	font-family: Montserrat;
+	
+	margin-left: 140px;
+}
+h2{
+	font-family: Comic Sans MS;
+	text-align: center;
+}
+.card p{
+	padding: 10px;
+	font-family: Yu Gothic UI;
+	margin-left: 20px;
+}
+.card a{
+	background-color: black;
+	color: white;
+	padding: 15px 20px;
+	display: block;
+	text-align: center;
+	margin: 20px 50px;
+	border-radius: 15px;
+	font-family: Comic Sans MS;
+}
+.card:hover{
+	background-color: rgb(80, 80, 80);
+	color: white;
+	cursor: pointer;
+	transform: scale(1.05);
+	transition: all 1s ease;
+}
+/*end second section*/
+/*start third section*/
+.pf-card{
+	height: 100vh;
+	background-image: linear-gradient(rgb(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(pf5.png);
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	/*justify-content: center;*/
+	padding-left: 150px;
+}
+.profile-card{
+	width: 400px;
+	text-align: center;
+	border-radius: 8px;
+	overflow: hidden;
+}
+.card-header{
+	padding: 60px 40px;
+	background: #2c3a47;
+}
+.pic{
+	display: inline-block;
+	padding: 8px;
+	background: linear-gradient(150deg, #74b9ff, #e66767);
+	margin: auto;
+	border-radius: 50%;
+	background-size: 200% 200%;
+	animation: animated-gradiet 2s linear infinite;
+}
+@keyframes animated-gradiet{
+	25%{
+		background-position: left bottom;
+	}
+	50%{
+		background-position: right bottom;
+	}
+	75%{
+		background-position: right top;
+	}
+	100%{
+		background-position: left top;
+	}
+
+}
+.pic img{
+	display: block;
+	width: 115px;
+	height: 100px;
+	border-radius: 50px;
+
+
+}
+.name{
+	color: #f2f2f2;
+	font-size: 28px;
+	font-weight: 600;
+	margin: 10px 0;
+	text-align: center;
+}
+.desc{
+	font-size: 18px;
+	color: #e66767;
+
+}
+.sm{
+	display: flex;
+	justify-content: center;
+	margin: 20px 0;
+}
+.sm a{
+	color: #f2f2f2;
+	width: 55px;
+	font-size: 22px;
+	transition: .3s linear;
+}
+.sm a:hover{
+	color: #e66767;
+
+}
+.contact-btn{
+	display: inline-block;
+	padding: 12px 50px;
+	color: #e66767;
+	border: 2px solid #e66767;
+	border-radius: 10px;
+	margin-top: 16px;
+	transition: .3s linear;
+	margin-left: 10px;
+
+}
+.contact-btn:hover{
+	background: #e66767;
+	color: #f2f2f2f2;
+
+}
+.card-footer{
+	background: #f4f4f4;
+	padding: 60px 10px;
+}
+.numbers{
+	display: flex;
+	align-items: center;
+}
+.item{
+	flex: 1;
+	text-transform: uppercase;
+	font-size: 13px;
+	color: #e66767;
+}
+.item span{
+	display: block;
+	color: #2c3a47;
+	font-size: 30px;
+}
+.border{
+	width: 1px;
+	height: 30px;
+	background: #bbb;
+}
+
+
+
+
+/*start contact section*/
+.section-title{
+	color: white;
+	font-family: Nirmala UI;
+	font-size: 40px;
+	text-align: center;
+}
+.contact-section .contact{
+	display: flex;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.contact-section .contact-items{
+	width: 40%;
+	padding: 10px;
+}
+.contact-section .contact-item{
+	width: 95%;
+	padding: 20px;
+	text-align: center;
+	border-radius: 10px;
+	padding: 30px;
+	margin: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0px 0px 18px 0 #00002c;
+}
+.contact-info h1, h2{
+	color: black;
+}
+.contact-item{
+	background-color: white;
+}
+/*end final section*/
+
+/*start footer section*/
+.inner{
+	margin: 0;
+	padding: 40px;
+	background-color: black;
+}
+.social-footer{
+	display: flex;
+
+}
+.social-footer ul{
+	display: flex;
+	width: 300px;
+	height: 30px;
+	margin: auto;
+}
+.social-items{
+	list-style: none;
+}
+.social-items a{
+	padding: 10px 20px;
+	font-size: 30px;
+	color: #e66767;
+	
+}
+.quick-links{
+	display: flex;
+	justify-content: center;
+}
+.quick-links ul{
+	display: flex;
+	
+}
+.quick-items{
+	list-style: none;
+}
+.quick-items a{
+	text-decoration: none;
+	padding: 0px 15px;
+	font-size: 18px;
+	color: #ea1538;
+
+}
+.outer{
+	padding: 2px;
+	text-align: center;
+	color: white;
+	font-size: 18px;
+	background-color: grey;
+}
